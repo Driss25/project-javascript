@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Noto+Kufi+Arabic:wght@700&display=swap');
+
+* {
+    margin: 0;
+    font-family: sans-serif;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+::selection {
+    background-color: rgb(183, 0, 255);
+    color: white;
+}
+
+body {
+    transition: .2s;
+}
+
+/*---------------nav--------------*/
+nav {
+    padding: 20px;
+
+}
+
+.nav {
+    margin: auto;
+    max-width: 1200px;
+
+}
+
+nav ul,
+nav li {
+    display: inline-block;
+
+}
+
+
+
+nav ul li a,
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+nav .nav>a {
+
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+nav ul li a {
+    padding: 5px 15px;
+
+}
+
+nav ul li a:hover {
+    border-bottom: rgba(0, 0, 0, 0.5) groove 2px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 854px) {
+
+    nav .nav>a {
+        display: block;
+    }
+
+    nav .nav ul li {
+        margin-top: 10px
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 6px;
+
+    }
+
+    nav ul {
+        display: block;
+        padding: 20px 4px 30px;
+    }
+
+    nav .log-sing {
+        float: none;
+    }
+
+}
+
+
+
+/*---------------header------------*/
+
+header .header {
+    background-color: #212529;
+    color: #ffff;
+    text-align: center;
+    padding: 40px;
+}
+
+header .header h1 {
+    letter-spacing: 3px;
+    word-spacing: 12px;
+}
+
+header .header h1 {
+    color: #ffff
+}
+
+header .header p {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.644);
+    margin: 0 10%;
+}
+
+/*-------------section sing up------------------*/
+section form caption {
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+form table {
+    margin: auto;
+    width: 60%;
+    max-width: 900px;
+
+}
+
+table {
+    border: 3px solid #979797;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+section form table td {
+    text-align: center;
+}
+
+section form .height {
+    height: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+section form .select {
+    width: 304px;
+    height: 34px;
+}
+
+section form input[type="submit"],
+section form input[type="reset"] {
+    width: 150px;
+    height: 40px;
+    background-color: #212529ad;
+    font-size: 25px;
+    color: #ffff;
+}
+
+section form input[value="Sing up"] {
+    margin-right: 18px;
+}
+
+section form input[type="submit"]:hover,
+section form input[type="reset"]:hover {
+    color: #ffff;
+    background-color: #2125295b;
+    cursor: pointer;
+}
+
+section h3 {
+    text-align: center;
+    margin-top: 40px;
+    transition: .2s;
+}
+
+section h3 a {
+    text-decoration: none;
+    color: brown;
+
+}
+
+section h3:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width:608px) {
+    section form .height {
+        width: 230px;
+    }
+
+    section form input[type="submit"],
+    section form input[type="reset"] {
+        width: 100px;
+
+    }
+}
+
+
+section label,
+.height {
+
+    font-size: x-large;
+}
+
+section input:focus,
+section select:focus {
+    background-color: #b8b2b2;
+    outline: 2px groove rgb(172, 172, 172);
+    color: darkred;
+
+}
+
+section input[name="sexe"]:focus {
+    outline: none;
+}
+
+
+/*-----------------------section log in---------------------------------*/
+
+section form input[value="Log In"] {
+    margin-right: 0px;
+    margin-left: 60px;
+    height: 50px;
+
+
+}
+
+@media only screen and (max-width:400px) {
+
+
+    section .tableLog label,
+    section .tableLog input,
+    section .tableLog input[type="submit"] {
+        font-size: 16px;
+    }
+
+    section .tableLog .br {
+        display: none;
+    }
+
+    section .tableLog input[type="submit"] {
+        height: 30px;
+        width: 80px;
+        margin-left: 30px;
+    }
+
+
+}
+
+
+
+
+
+
+/*-------------------------------footer-------------------------------*/
+footer {
+    background-color: #212529;
+    text-align: center;
+}
+
+footer .p1,
+footer .p2 {
+    color: #ffff;
+    font-size: larger;
+
+}
+
+footer .p1 {
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+footer img {
+    width: 30px;
+    padding: 5px 8px;
+    transition: .1s;
+}
+
+footer .padding {
+    padding: 40px 0;
+}
+
+footer img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}

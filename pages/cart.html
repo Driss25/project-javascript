@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="DRS Gaming , n°1 du gaming Maroc , Comparez et achetez votre PC gamer en livraison rapide à domicile ou en magasin.">
+    <meta name="author" content="DrissRaiss">
+    <title>DRS Gaming</title>
+    <link rel="icon" type="image/png" href="../logo/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-weight: bold
+        }
+
+
+        th,
+        td {
+            border: 2px solid;
+        }
+
+        td,
+        th {
+            padding: 5px;
+            font-size: large;
+        }
+
+        th {
+            color: indigo;
+        }
+
+        .nb {
+            width: 65px;
+        }
+
+        .prod {
+            width: 500px;
+        }
+
+        .pric,
+        .btn {
+            width: 100px;
+        }
+
+        tbody button {
+            width: 80%;
+            padding: 2px;
+            margin: 2px;
+            font-size: medium;
+        }
+
+        .quantity {
+            width: 100px;
+        }
+
+        .ce {
+            text-align: center;
+        }
+
+        .ce input {
+            padding: 1px 10px;
+            border-radius: 12px;
+
+        }
+
+        td:nth-child(odd),
+        td:last-child {
+            text-align: center;
+        }
+
+        .div {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .div button {
+            padding: 5px;
+            width: 150px;
+            font-size: larger;
+            margin: auto 10px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        #valid {
+            background-color: rgb(23, 135, 0);
+        }
+
+        #reset {
+            background-color: rgb(255, 174, 0);
+        }
+
+        #valid:hover {
+            background-color: rgb(75, 167, 56);
+        }
+
+        #reset:hover {
+            background-color: rgb(241, 203, 119);
+        }
+
+        td span {
+            padding: 0 6px
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav">
+            <a href="../index.html" id="drs">DRS Gaming</a>
+            <ul>
+                <li><a href="../index.html#products">Products</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="https://paypal.me/drissraiss?country.x=MA&locale.x=en_US">Support</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="header">
+            <h1>Cart</h1>
+        </div>
+    </header>
+    <section id="products">
+        <table>
+            <thead>
+                <tr>
+                    <th class="nb">Number</th>
+                    <th class="prod">Products</th>
+                    <th class="pric">Price</th>
+                    <th class="quantity">Quantity</th>
+                    <th class="btn">Remove</th>
+
+                </tr>
+            </thead>
+            <tbody id="cartEmpty">
+                <td colspan="5">Cart is empty</td>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">Total</th>
+                    <th colspan="3" id="total">00 DH</th>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="div">
+            <button id="valid">Valid cart</button>
+            <button id="reset">Clear cart</button>
+        </div>
+    </section>
+    <footer id="contacts">
+        <div class="padding">
+            <p class="p1">For more information, please contact us</p>
+            <br>
+            <a href="https://github.com/Driss25" target="_blank"><img src="../logo/github.png" alt="Github"></a>
+            <a href="https://www.facebook.com/mohamad.zaze.12" target="_blank"><img src="../logo/facebook.png"
+                    alt="FaceBook"></a>
+            <a href="https://www.instagram.com/drissrays" target="_blank"><img src="../logo/instagram.png"
+                    alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/driss-raiss-8aa83922a" target="_blank"><img src="../logo/Linkedin.png"
+                    alt="Linkedin"></a>
+            <a href="https://twitter.com/drissraiss99" target="_blank"><img src="../logo/twiter.png" alt="Twiter"></a>
+            <br><br>
+            <button onclick="show_hide()"><img class="maps" src="../logo/maps.png" alt="maps"></button>
+            <br>
+            <br>
+            <div class="iframe" id="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d615.3972438125912!2d-10.056827877566766!3d28.98607293496539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb503e104f6efbb%3A0x134321415d1dca6a!2sAS%20STORE!5e1!3m2!1sen!2sma!4v1641504695083!5m2!1sen!2sma"
+                    width="60%" height="400px" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <br><br>
+            <p class="p2">Copyright &copy; DRS Gaming 2022</p>
+        </div>
+    </footer>
+
+
+    <!--<script src="javascript/script.js"></script>-->
+    <!--<script src="javascript/scriptLang.js"> </script>-->
+    <script src="../javascript/cart.js"></script>
+</body>
+
+</html>
